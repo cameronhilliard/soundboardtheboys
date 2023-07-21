@@ -46,12 +46,24 @@
 
         }
 
+                
+        #btn4 {
+            height: 30px;
+            font-family: TheBoys;
+            margin-top: 15px;
+        }
 
+        #btn5 {
+            height: 30px;
+            font-family: TheBoys;
+            margin-top: 15px;
+
+        }
 
         
 
         .button_container {
-            width:600px;
+            width: 1000px;
             height:500px;
             margin: auto;
             text-align: center;
@@ -72,6 +84,80 @@
         }
 
 
+
+        @media screen and (max-width: 767px) {
+        @font-face {
+            font-family: TheBoys;
+            src: url(theboys.ttf);
+        }
+        
+        
+        body {
+            background-color: black;
+        }
+
+        .Title {
+            text-align: center;
+            font-family: TheBoys;
+            color:white
+        }
+
+        #btn1 {
+            height: 30px;
+            font-family: TheBoys;
+
+        }
+
+        #btn2 {
+            height: 30px;
+            font-family: TheBoys;
+            margin-top: 15px;
+
+        }
+
+        
+        #btn3 {
+            height: 30px;
+            font-family: TheBoys;
+            margin-top: 15px;
+
+        }
+
+                
+        #btn4 {
+            height: 30px;
+            font-family: TheBoys;
+            margin-top: 15px;
+        }
+
+
+        
+        .button_container {
+            width: 400px;
+            height:500px;
+            margin: auto;
+            text-align: center;
+            
+        }
+
+        .btn_group {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .btn_group button {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width:200px
+        }
+
+    }
+
+
+
+
     </style>
 </head>
 <body>
@@ -86,24 +172,28 @@
 <div class="button_container"> 
     <div class="btn_group">
 
-        <button id="btn" onclick="audio.play();">GARGLE MY BALLSACK</button>
-        <button id="btn2" onclick="audio1.play();">INTO A CUP</button>
-        <button id="btn3" onclick="audio2.play();">I'M BETTER</button>
-        <button id="btn4" onclick="audio3.play();">I CAN DO WHATEVER</button>
+        <button id="btn1" onclick="audio1.play();">GARGLE MY BALLSACK</button>
+        <button id="btn2" onclick="audio2.play();">INTO A CUP</button>
+        <button id="btn3" onclick="audio3.play();">I'M BETTER</button>
+        <button id="btn4" onclick="audio4.play();">FUCKING DIABOLICAL</button>
     </div>    
  </div>
 
 
 
 <script type="text/javascript">
-    const audio = new Audio();
-    audio.src = "./gargle.mp3";
-
     const audio1 = new Audio();
-    audio1.src = "./intoacup.mp3";
+    audio1.src = "./gargle.mp3";
 
     const audio2 = new Audio();
-    audio2.src = "./imbetter.mp3";
+    audio2.src = "./intoacup.mp3";
+
+    const audio3 = new Audio();
+    audio3.src = "./imbetter.mp3";
+
+    const audio4 = new Audio();
+    audio4.src = "./diabolical.mp3";
+
 
 </script>
 
