@@ -28,13 +28,17 @@
         #btn1 {
             height: 30px;
             font-family: TheBoys;
+            color: white;
+            cursor: pointer;
 
         }
 
         #btn2 {
             height: 30px;
             font-family: TheBoys;
+            color: white;
             margin-top: 15px;
+            cursor: pointer;
 
         }
 
@@ -42,7 +46,9 @@
         #btn3 {
             height: 30px;
             font-family: TheBoys;
+            color: white;
             margin-top: 15px;
+            cursor: pointer;
 
         }
 
@@ -50,16 +56,28 @@
         #btn4 {
             height: 30px;
             font-family: TheBoys;
+            color: white;
             margin-top: 15px;
+            cursor: pointer;
         }
 
         #btn5 {
             height: 30px;
             font-family: TheBoys;
+            color: white;
             margin-top: 15px;
+            cursor: pointer;
 
         }
 
+        #btn6 {
+            height: 30px;
+            font-family: TheBoys;
+            color: white;
+            margin-top: 15px;
+            cursor: pointer;
+
+        }
         
 
         .button_container {
@@ -84,7 +102,6 @@
         }
 
 
-
         @media screen and (max-width: 767px) {
         @font-face {
             font-family: TheBoys;
@@ -105,12 +122,14 @@
         #btn1 {
             height: 30px;
             font-family: TheBoys;
+            color: white;
 
         }
 
         #btn2 {
             height: 30px;
             font-family: TheBoys;
+            color: white;
             margin-top: 15px;
 
         }
@@ -119,6 +138,7 @@
         #btn3 {
             height: 30px;
             font-family: TheBoys;
+            color: white;
             margin-top: 15px;
 
         }
@@ -129,6 +149,24 @@
             font-family: TheBoys;
             margin-top: 15px;
         }
+
+
+        #btn5 {
+            height: 30px;
+            font-family: TheBoys;
+            color: white;
+            margin-top: 15px;
+
+        }
+
+        #btn6 {
+            height: 30px;
+            font-family: TheBoys;
+            color: white;
+            margin-top: 15px;
+
+        }
+        
 
 
         
@@ -172,13 +210,15 @@
 <div class="button_container"> 
     <div class="btn_group">
 
-        <button id="btn1" onclick="audio1.play();">GARGLE MY BALLSACK</button>
-        <button id="btn2" onclick="audio2.play();">INTO A CUP</button>
-        <button id="btn3" onclick="audio3.play();">I'M BETTER</button>
-        <button id="btn4" onclick="audio4.play();">FUCKING DIABOLICAL</button>
+        <a id="btn1" onclick="audio1.play();">GARGLE MY BALLSACK</a>
+        <a id="btn2" onclick="audio2.play();">INTO A CUP</a>
+        <a id="btn3" onclick="audio3.play();">I'M BETTER</a>
+        <a id="btn4" onclick="audio4.play();">FUCKING DIABOLICAL</a>
+        <a id="btn5" onclick="audio5.play();">IT WAS PERFECT</a>
+        <a id="btn6" onclick="audio6.play();">I'M THE HOMELANDER</a>
     </div>    
- </div>
 
+ </div>
 
 
 <script type="text/javascript">
@@ -193,6 +233,14 @@
 
     const audio4 = new Audio();
     audio4.src = "./diabolical.mp3";
+
+    
+    const audio5 = new Audio();
+    audio5.src = "./itwasperfect.mp3";
+
+       
+    const audio6 = new Audio();
+    audio6.src = "./imhomelander.mp3";
 
 
 </script>
